@@ -11,27 +11,73 @@
         padding: 0%;
     }
     nav{
-        background-color: blue;
+        background-color: rgb(65, 65, 77);
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .navlogo{
+        width: 40px;
         height: 40px;
+        padding-left: 10px;
+        border-radius: 10px;
+        background-color: rgb(83, 78, 87);
+    }
+    .navul{
         display: flex;
         gap: 50px;
         justify-content: center;
-        align-items: center;
+        flex: 1;
+        height: 100%;
     }
-    li{
+    .Button{
         list-style: none;
+        height: 100%;
     }
-    li a{
+    .Button a{
         text-decoration: none;
         color: aqua;
+        background-color: rgb(83, 78, 87);
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 15px;
+    }
+    .navulright{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        background-color: rgb(83, 78, 87);
+    }
+    .navulright:hover{
+        background-color: blueviolet;
+    }
+    .navulright a{
+        text-decoration: none;
+        color: aqua;
+    }
+    .navulright li{
+        list-style: none;
+    }
+    nav ul li a:hover{
+        color: beige;
+        background-color: blueviolet;
     }
    </Style>
 <body>
     <nav>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contac Us</a></li>
-        <li><a href="#">Galary</a></li>
-        <li><a href="#">About Us</a></li>
+        <img class="navlogo" src="Images/OIP (3).jpg" alt="Logo">
+        <ul class="navul">
+        <li class="Button"><a href="#">Home</a></li>
+        <li class="Button"><a href="#">Contac Us</a></li>
+        <li class="Button"><a href="#">Galary</a></li>
+        <li class="Button"><a href="#">About Us</a></li>
+        </ul>
+        <ul class="navulright">
+            <li><a class="Button" href="#">Join Us</a></li>
+        </ul>
+
     </nav>
 </body>
 </html>
